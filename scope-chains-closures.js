@@ -1,8 +1,10 @@
-// 3. Global Scope & Shadowing
+// 4. Closures
 function foo() {
   var bar;
   quux = 0;
   function zip() {
     var quux = 1;
+    bar = true;
   }
+  return zip;
 }
